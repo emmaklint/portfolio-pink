@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Emma Klint</title>
+	<meta name="viewport" content="width=device-width" />
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="stylesheet-portfolio.css">
+	<link href="https://fonts.googleapis.com/css?family=Passion+One:700|Roboto:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,900" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="img/favicon"/>
+</head>
+
+<body>
+<div id="app">
+	<div id="header">
+		<div id="name-title">
+			Emma Klint.
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a class="nav-link" href="/">home</a></li>
+				<li><a class="nav-link" href="/portfolio">portfolio</a></li>
+				<li><a class="nav-link" href="http://www.emmaklint.com/blog">blog</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="portfolio-wrapper">
+		<div class="portfolio-item" v-for="item in items">
+			<a v-bind:href="'project#' + item.src">
+				<div class="box" v-bind:style="{ background: item.color, backgroundSize: 'contain'}">
+					<div class="item-textbox" v-on:mouseover="onHover(item)" v-on:mouseout="mouseOut(item)">
+						<p class="item-text" v-show="item.active">{{item.title}}</p>
+					</div>	
+				</div>
+			</a>
+		</div>
+	</div>
+	</div>
+
+</div>
+
+<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+	<script src="app.js"></script>
+
+</body>
+
+</html>

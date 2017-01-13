@@ -1,0 +1,297 @@
+html {
+	margin: 0;
+	width: 100vw;
+}
+
+body {
+	margin: 0;
+	width: 100vw;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.nav-link {
+    color: #00C853;
+    font-size: 26pt;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.8s;
+/*    text-decoration: underline;*/
+}
+
+#header {
+	height: 10vh;
+	width: 100vw;
+	margin: 0;
+	position: relative;
+	display: flex;
+	position: relative;
+	z-index: 2;
+	justify-content: space-between;
+	flex-direction: row;
+	color: white;
+	padding-top: 20px;
+}
+
+#name-title {
+	font-weight: 900;
+	font-size: 36pt;
+	margin: 0;
+	padding-left: 40px; 
+	position: relative;
+	z-index: 2;
+	color: #00C853;
+	font-family: 'Raleway', sans-serif;
+	
+}
+
+#menu {
+	color: white;
+	padding-right: 40px;
+	
+}
+
+#menu li {
+	display: inline;
+	margin: 10px 10px;
+
+/*	text-decoration: underline;
+*/}
+
+#menu li a:hover {
+	color: #4A4A4A;
+}
+
+#portfolio-wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.item-textbox {
+	display: table-cell;
+	height: 350px;
+	width: 350px;
+  	vertical-align: middle;
+  	text-align: center;
+}
+
+.item-text {
+	/*display: inline-block;*/
+	height: 350px;
+	width: 350px;
+	background-color: #00C853;
+	z-index: -1;
+	/*line-height: 250px;*/
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-size: 250%; 
+	display: table-cell;
+    vertical-align:middle;
+    text-align:center;
+    text-decoration: none;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#pitch {
+	margin-top: -80px;
+	position: relative;
+	z-index: 2;
+	padding-right: 40px;
+	width: 40vw;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	color: white;
+
+}
+
+.portfolio-item {
+	width: 350px;  
+  	height: 350px;
+  	margin: 0;  
+  	align-items: flex-start;
+  	justify-content: space-around;
+  	padding: 10px;
+}
+
+.front-text {
+	z-index: 2;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	padding-top: 150px;
+	text-align: center;
+}
+
+.name {
+	font-weight: 900;
+	font-size: 200%;
+	margin: 0;
+}
+
+.roles {
+	color: white;
+	text-align: center;
+	font-size: 100%;
+	padding-top: 2px;
+	margin: 0;
+	font-weight: 300;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+.intro-text {
+	margin:0;
+	text-align: left;
+	padding-top: 2px
+
+}
+
+/*
+@media (max-width: 800px) {
+	.name {
+		font-size: 30px;
+		margin-top: 40px;
+	}
+	.roles {
+		font-size: 15px;
+	}
+
+	.group {
+		height: auto;
+	}
+	.img {
+		height: auto;
+	}
+	.img-circle {
+		padding-top: 20px;
+		width: 120px;
+		height: 120px;
+	}
+	.intro-text  {
+		padding-top: 20px;
+		margin: 0;
+		font-size: 75%;
+		text-align: center;
+	}
+	.front-text {
+		padding-top: 0px;
+	}
+
+	#name-title {
+		padding-top: 0;
+		padding-bottom: 0;
+		height: 10px;
+		font-size: 150%;
+	}
+}*/
+
+
+#project-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100vw;
+}
+
+.project-item {
+	width: 60vw;
+	margin: auto;
+}
+/*
+@media (max-width: 800px) {
+	.project-item {
+		width: 90vw;
+	}	
+}*/
+
+#project-title {
+	font-family: 'Raleway', sans-serif;
+	color: #4A4A4A;
+	font-weight: 900;
+	font-size: 400%;
+	position: relative;
+	z-index: 2;
+	text-align:center;
+	padding: 20px;
+	margin-top: 40px;
+}
+
+.table-project {
+	
+}
+
+.table-project, th, td {
+	font-family: 'Raleway', sans-serif;
+	vertical-align: text-top;
+}
+
+th {
+	text-align: left;
+	padding-left: 0px;
+	color: #4A4A4A;
+	font-size: 14px;
+	font-weight: 700;
+	
+}
+
+td {
+	font-family: 'Open Sans', sans-serif;
+	padding-left: 10px;
+	color: #4A4A4A;
+	font-size: 14px;
+}
+
+.headline {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	margin:0;
+	font-size: 120%;
+	padding-bottom: 6px;
+	padding-top: 15px;
+	text-transform: uppercase;
+	color: #4A4A4A;
+}
+
+.paragraph {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	margin:0;
+	margin-bottom: 10px;
+	font-size: 16px;
+	line-height: 150%;
+	color: #4A4A4A;
+}
+
+.gallery-wrapper {
+	display: flex;
+	width: 100%;
+	margin:20px;
+}
+
+.gallery-image {
+
+width: 75%;  /* Or whatever */
+  height: 75%; /* Or whatever */
+  margin: auto;  /* Magic! */
+}
+
+.github-link {
+	color: #4A4A4A;
+}
