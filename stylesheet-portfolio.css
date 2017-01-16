@@ -31,13 +31,11 @@ a {
 }
 
 #header {
-	height: 10vh;
+	height: 7vh;
 	width: 100vw;
 	margin: 0;
-	position: relative;
 	display: flex;
 	position: relative;
-	z-index: 2;
 	justify-content: space-between;
 	flex-direction: row;
 	color: white;
@@ -73,6 +71,33 @@ a {
 	color: #4A4A4A;
 }
 
+
+@media (max-width: 700px) {
+	#name-title {
+		font-size: 18pt;
+		width:50vw;
+	}
+
+	.nav-link {
+    font-size: 14pt;
+	}
+
+	#menu {
+		width: 50vw;
+	}
+
+	ul {
+		margin: 0;
+	}
+
+	#header {
+		padding-bottom: 30px;
+	}
+}
+
+
+
+
 #portfolio-wrapper {
 	display: flex;
 	flex-direction: row;
@@ -97,7 +122,7 @@ a {
 	/*line-height: 250px;*/
 	font-family: 'Raleway', sans-serif;
 	font-weight: 900;
-	font-size: 250%; 
+	font-size: 200%; 
 	display: table-cell;
     vertical-align:middle;
     text-align:center;
@@ -214,18 +239,18 @@ a {
 	width: 60vw;
 	margin: auto;
 }
-/*
-@media (max-width: 800px) {
+
+@media (max-width: 700px) { 
 	.project-item {
 		width: 90vw;
-	}	
-}*/
+	}
+	}
 
 #project-title {
 	font-family: 'Raleway', sans-serif;
 	color: #4A4A4A;
 	font-weight: 900;
-	font-size: 400%;
+	font-size: 90px;
 	position: relative;
 	z-index: 2;
 	text-align:center;
@@ -246,7 +271,7 @@ th {
 	text-align: left;
 	padding-left: 0px;
 	color: #4A4A4A;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 700;
 	
 }
@@ -255,7 +280,7 @@ td {
 	font-family: 'Open Sans', sans-serif;
 	padding-left: 10px;
 	color: #4A4A4A;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .headline {
@@ -274,24 +299,46 @@ td {
 	font-weight: 400;
 	margin:0;
 	margin-bottom: 10px;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 150%;
 	color: #4A4A4A;
+}
+
+.paragraph a {
+	color: #4A4A4A;
+}
+
+@media (max-width: 700px) { 
+	.paragraph {
+		font-size: 12px;
+	}
+
+	th {
+		font-size: 10px;
+	}
+
+	td {
+		font-size: 10px;
+	}
+
+	#project-title {
+		font-size: 30px;
+	}
 }
 
 .gallery-wrapper {
 	display: flex;
 	width: 100%;
-	margin:20px;
+	margin:0;
 }
 
 .gallery-image {
 
-width: 75%;  /* Or whatever */
-  height: 75%; /* Or whatever */
+width: 90%;  /* Or whatever */
+  height: 90%; /* Or whatever */
   margin: auto;  /* Magic! */
 }
 
-.github-link {
+.text-link {
 	color: #4A4A4A;
 }
