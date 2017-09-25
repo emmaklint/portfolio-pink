@@ -1,130 +1,106 @@
-var items = { automorning: { src: 'automorning',
-                      active: false,
-                      title: 'auto:morning',
-                      color: 'url(img/am.png)',
-                      about: "auto:morning is a mobile application aiming to simplify the users morning routine by giving them just the right information at the right time. We made the application with stressful mornings when you want to go to work or school in the most efficient way in mind. We were four persons who worked on the project for three weeks.",
-                      course: "DM2518 Mobile Development with Web Technologies",
-                      year: "Spring 2016",
-                      role: "Product owner, designer and front end-developer",
-                      tools: "AngularJS, Firebase, Adobe Illustrator",
-                      team: "Emma Klint, Viktor Gustafsson, Ariel Blomkvist Rova, Viktor Ceder",
-                      github: 'https://github.com/arielrova/dm2518-morningroutine',
-                      text: [{ headline: "Design process",
-                              paragraph: "This project was done within a very limited time frame why we decided to divide the work according to the competences every member already had. We started of with brainstorming and a draft of a prototype. Later another prototype was made using the application POP, Prototyping on Paper in order to further visualise the interactions and navigation. We did use this prototype as a guideline when building the actual application, but we made som changes to the design along the way.",
-                              images: { image1: 'img/Artboard 5.png', 
-                                      image2: 'img/Project4.png',
-                                      image3: 'img/Project5.png',
-                                      image4: 'img/Project6.png'},
-                              gallery: true,
-                              singleimage: false
-                            },
-                            { headline: "Concept",
-                            paragraph: "E-quality ipsum Female software engineers get paid twelve percent less. Female software engineers get paid twelve percent less. After all, one of the founders of computer programming was a woman, Ada Lovelace, back in the 1840s. Women’s acceptance rates dominate over men’s for every programming language in the top 10, to various degrees. It’s just unprofessional. Tech needs to grow up. Twenty percent of female web developers perceive gender bias has hurt them professionally vs one percent of male web developers. Nearly half of all female engineers are leaving the field.",
-                            image:  'img/Artboard 5.png',
-                            gallery: false,
-                            singleimage: true
-                            }
-                            ]},
-              papar: { src: 'papar',
-                      active: false,
-                      title: 'PapAR!',
-                      color: 'url(img/Project7.png)',
-                      about: "E-quality ipsum Women make up a very small percentage of software developers – just eleven percent. After all, one of the founders of computer programming was a woman, Ada Lovelace, back in the 1840s.",
-                      course: "DH1245 Multimodala interaktioner och gränssnitt",
-                      year: "Fall 2016",
-                      role: "User Experience",
-                      tools: "Sketch, JavaScript, Photoshop",
-                      team: "Emma Klint, Caroline Lönn, Simone Stenis Perron",
-                      text: [{ headline: "Concept",
-                              paragraph: "E-quality ipsum Female software engineers get paid twelve percent less. Female software engineers get paid twelve percent less. After all, one of the founders of computer programming was a woman, Ada Lovelace, back in the 1840s. Women’s acceptance rates dominate over men’s for every programming language in the top 10, to various degrees. It’s just unprofessional. Tech needs to grow up. Twenty percent of female web developers perceive gender bias has hurt them professionally vs one percent of male web developers. Nearly half of all female engineers are leaving the field."
-                            }],
-                      image: 'img/Project1.png'},
-              quickpitch: { src: 'quickpitch',
-                      active: false,
-                      title: 'QuickPitch!',
-                      color: 'url(img/Project5.png)',
-                      about: "E-quality ipsum Women make up a very small percentage of software developers – just eleven percent. After all, one of the founders of computer programming was a woman, Ada Lovelace, back in the 1840s.",
-                      course: "DH1245 Multimodala interaktioner och gränssnitt",
-                      year: "Fall 2016",
-                      role: "User Experience",
-                      tools: "Sketch, JavaScript, Photoshop",
-                      team: "Emma Klint, Caroline Lönn, Simone Stenis Perron",
-                      text: [{ headline: "Concept",
-                              paragraph: "E-quality ipsum Female software engineers get paid twelve percent less. Female software engineers get paid twelve percent less. After all, one of the founders of computer programming was a woman, Ada Lovelace, back in the 1840s. Women’s acceptance rates dominate over men’s for every programming language in the top 10, to various degrees. It’s just unprofessional. Tech needs to grow up. Twenty percent of female web developers perceive gender bias has hurt them professionally vs one percent of male web developers. Nearly half of all female engineers are leaving the field."
-                            }],
-                      image: 'img/Project4.png'},
-              watch: { src: 'watch',
-                      active: false,
-                      title: 'Watch',
-                      color: 'url(img/Project8.png)',
-                      about: "E-quality ipsum Women make up a very small percentage of software developers – just eleven percent. After all, one of the founders of computer programming was a woman, Ada Lovelace, back in the 1840s.",
-                      course: "DH1245 Multimodala interaktioner och gränssnitt",
-                      year: "Fall 2016",
-                      role: "User Experience",
-                      tools: "Sketch, JavaScript, Photoshop",
-                      team: "Emma Klint, Caroline Lönn, Simone Stenis Perron",
-                      text: [{ headline: "Concept",
-                              paragraph: "E-quality ipsum Female software engineers get paid twelve percent less. Female software engineers get paid twelve percent less. After all, one of the founders of computer programming was a woman, Ada Lovelace, back in the 1840s. Women’s acceptance rates dominate over men’s for every programming language in the top 10, to various degrees. It’s just unprofessional. Tech needs to grow up. Twenty percent of female web developers perceive gender bias has hurt them professionally vs one percent of male web developers. Nearly half of all female engineers are leaving the field."
-                            }],
-                      image: 'img/Project4.png'},
-              ledu: { src: 'ledu',
-                      active: false,
-                      title: 'LED.U',
-                      color: 'url(img/Project6.png)',
-                      about: "E-quality ipsum Women make up a very small percentage of software developers – just eleven percent. After all, one of the founders of computer programming was a woman, Ada Lovelace, back in the 1840s.",
-                      course: "DH1245 Multimodala interaktioner och gränssnitt",
-                      year: "Fall 2016",
-                      role: "User Experience",
-                      tools: "Sketch, JavaScript, Photoshop",
-                      team: "Emma Klint, Caroline Lönn, Simone Stenis Perron",
-                      text: [{ headline: "Concept",
-                              paragraph: "E-quality ipsum Female software engineers get paid twelve percent less. Female software engineers get paid twelve percent less. After all, one of the founders of computer programming was a woman, Ada Lovelace, back in the 1840s. Women’s acceptance rates dominate over men’s for every programming language in the top 10, to various degrees. It’s just unprofessional. Tech needs to grow up. Twenty percent of female web developers perceive gender bias has hurt them professionally vs one percent of male web developers. Nearly half of all female engineers are leaving the field."
-                            }],
-                      image: 'img/Project6.png'},
-               pepp: { src: 'pepp',
-                       active: false,
-                       title: 'Pepp',
-                       color: 'url(img/pepp.png)',
-                       about: "E-quality ipsum Women make up a very small percentage of software developers – just eleven percent. After all, one of the founders of computer programming was a woman, Ada Lovelace, back in the 1840s.",
-                       course: "DH1245 Multimodala interaktioner och gränssnitt",
-                       year: "Fall 2016",
-                       role: "User Experience",
-                       tools: "Sketch, JavaScript, Photoshop",
-                       team: "Emma Klint, Caroline Lönn, Simone Stenis Perron",
-                       text: [{ headline: "Concept",
-                               paragraph: "E-quality ipsum Female software engineers get paid twelve percent less. Female software engineers get paid twelve percent less. After all, one of the founders of computer programming was a woman, Ada Lovelace, back in the 1840s. Women’s acceptance rates dominate over men’s for every programming language in the top 10, to various degrees. It’s just unprofessional. Tech needs to grow up. Twenty percent of female web developers perceive gender bias has hurt them professionally vs one percent of male web developers. Nearly half of all female engineers are leaving the field."
-                             }],
-                       image: 'img/Project4.png'},
-            }
+// $(window).on('load', function(){
+//     $('.visual-gallery').flickity({
+//         wrapAround: true,
+//         freeScroll: true,
+//         lazyLoad: 3,
+//         imagesLoaded: true
+//     });
+// });
+//
 
-var vue = new Vue({
-  el: '#app',
-  data: {
-  	selectedItem: { title: 'Placeholder' },
-    items: items,
-  },
-   methods: {
-        onHover: function (item) {
-        	if (item.active == false) {
-        		item.active = true;
-        	}
-        },
-        mouseOut: function(item) {
-        	if (item.active == true) {
-        		item.active = false;
-        	}
+var isMobile = false; //initiate as false
+// device detection
+if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent)
+    || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0,4))) isMobile = true;
+
+$("#click-arrow").click(function() {
+  console.log('click')
+    $('html,body').animate({
+        scrollTop: $("#second-container").offset().top},
+        'slow');
+});
+
+
+
+// $(window).on("scroll", function() {
+//     if($('.sec2').scrollTop() > 200) {
+//         $("#title-project").addClass("active");
+//     } else {
+//         //remove the background property so it comes transparent again (defined in your css)
+//        $("#title-project").removeClass("active");
+//     }
+// });
+
+
+
+
+var stickyHeaders = (function() {
+
+  var $window = $(window),
+      $stickies;
+
+  var load = function(stickies) {
+
+    if (typeof stickies === "object" && stickies instanceof jQuery && stickies.length > 0) {
+
+      $stickies = stickies.each(function() {
+
+        var $thisSticky = $(this).wrap('<div class="followWrap" />');
+
+        $thisSticky
+            .data('originalPosition', $thisSticky.offset().top)
+            .data('originalHeight', $thisSticky.outerHeight())
+              .parent()
+              .height($thisSticky.outerHeight());
+      });
+
+      $window.off("scroll.stickies").on("scroll.stickies", function() {
+		  _whenScrolling();
+      });
+    }
+  };
+
+  var _whenScrolling = function() {
+
+    $stickies.each(function(i) {
+
+      var $thisSticky = $(this),
+          $stickyPosition = $thisSticky.data('originalPosition');
+
+      if ($stickyPosition <= $window.scrollTop()) {
+
+        var $nextSticky = $stickies.eq(i + 1),
+            $nextStickyPosition = $nextSticky.data('originalPosition') - $thisSticky.data('originalHeight');
+
+        $thisSticky.addClass("fixed");
+
+        if ($nextSticky.length > 0 && $thisSticky.offset().top >= $nextStickyPosition) {
+
+          $thisSticky.addClass("absolute").css("top", $nextStickyPosition);
         }
-  }
-})
 
-// window.onload = function () {
-if (window.location.hash) {
+      } else {
 
-  hash = window.location.hash.substring(1);
-  vue.selectedItem = items[hash];
+        var $prevSticky = $stickies.eq(i - 1);
 
+        $thisSticky.removeClass("fixed");
+
+        if ($prevSticky.length > 0 && $window.scrollTop() <= $thisSticky.data('originalPosition') - $thisSticky.data('originalHeight')) {
+
+          $prevSticky.removeClass("absolute").removeAttr("style");
+        }
+      }
+    });
+  };
+
+  return {
+    load: load
+  };
+})();
+
+if (isMobile == false)
+{
+$(function() {
+  stickyHeaders.load($(".side"));
+});
 }
-
-
-// external js: flickity.pkgd.js
-
