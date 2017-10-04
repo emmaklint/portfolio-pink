@@ -22,14 +22,14 @@ $("#click-arrow").click(function() {
 
 
 
-// $(window).on("scroll", function() {
-//     if($('.sec2').scrollTop() > 200) {
-//         $("#title-project").addClass("active");
-//     } else {
-//         //remove the background property so it comes transparent again (defined in your css)
-//        $("#title-project").removeClass("active");
-//     }
-// });
+$(window).on("scroll", function() {
+    if($('.sec2').scrollTop() > 200) {
+        $("#title-project").addClass("active");
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+       $("#title-project").removeClass("active");
+    }
+});
 
 
 
